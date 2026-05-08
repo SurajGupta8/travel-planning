@@ -19,6 +19,14 @@ dist/
 build/
 .npm/
 
+# Tools & Logs
+cypress_output.txt
+cypress_output_final.txt
+staticfiles/
+frontend/cypress/screenshots/
+frontend/cypress/videos/
+frontend/cypress/results/
+
 # OS generated files
 .DS_Store
 .DS_Store?

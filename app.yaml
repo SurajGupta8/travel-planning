@@ -1,0 +1,17 @@
+runtime: python311
+instance_class: F1
+
+env_variables:
+  DJANGO_SETTINGS_MODULE: "travel_engine.settings"
+
+entrypoint: gunicorn -b :$PORT travel_engine.wsgi:application
+
+handlers:
+- url: /static
+  static_dir: staticfiles/
+  
+- url: /media
+  static_dir: media/
+
+- url: /.*
+  script: auto
