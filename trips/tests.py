@@ -185,7 +185,7 @@ class ExpenseModelTestCase(TestCase):
 # UNIT TESTS — Model: Document (Encryption + Validation)
 # ============================================================
 
-@override_settings(FERNET_KEY='btBys_n8Wokk75P-U3y5a33ePukN9MuaCBX-D3Dz5MU=')
+@override_settings(FERNET_KEY=FERNET_KEY)
 class DocumentModelTestCase(TestCase):
     def setUp(self):
         self.user = User.objects.create_user(username='docuser', password='pass')
