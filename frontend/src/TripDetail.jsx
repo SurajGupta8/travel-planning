@@ -42,7 +42,7 @@ const TripDetail = ({ trip, onBack }) => {
 
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyAy4TlDWHSQ7vM3rtfCswGoIouGqrCnGWQ",
+    googleMapsApiKey: googleMapsApiKey,
     libraries: LIBRARIES,
   });
 
